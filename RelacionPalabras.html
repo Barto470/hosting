@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGENES/Imagen8.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/NORMALIZE.css">
+    <title>Campaña Apoyo Femenino.</title>
+    <link rel="stylesheet" type="text/css" href="CSS/EstiloRelacionPalabras.css">
+    <meta name="title" content="Campaña Apoyo Femenino.">
+    <meta name="description"
+      content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Campaña Apoyo Femenino.">
+    <meta property="og:description"
+      content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="twitter:card" content="summary_large_image">
+  </head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+        <div class="nav__logo">
+            <img src="./IMAGENES/LogoPagina.jpeg" alt="Logo violencia de genero">
+            <h2 class="nav__title"> <br>Campaña Apoyo Femenino.</h2>
+        </div>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="index.html" class="nav__links">Inicio</a>
+            </li>
+            <img src="IMAGENES/close.svg" class="nav__close">
+        </ul>
+
+        <div class="nav__menu">
+            <img src="IMAGENES/menu.svg" alt="nav__img">
+        </div>
+    </nav>
+
+    <section class="hero__container container" id="Inicio">
+        <h1 class="hero__title">Aprende Sobre La Violencia De Genero.</h1>
+        <p class="hero__paragraph">La aplicación CAMPAÑA APOYO FEMENINO, como lo indica su nombre es una 
+                                   aplicación que nos brinda información sobre la violencia de género en 
+                                   las mujeres, como identificar cuando estamos en peligro, a donde debemos 
+                                   de acudir para recibir un apoyo sobre este tipo dentro de la institución 
+                                   educativa marco fidel Suarez.</p>
+        <!--<a href="#AcercaDe" class="cta">Aprende Ahora</a>-->
+    </section>
+  </header>
+  <main>
+    <div class="container about"id="contenedor">
+      <h2 class="h_2">RELACION DE PALABRAS <br>----MUJERES----<br> APOYO FEMENINO</h2>
+      <div id="mensaje"></div>
+      <div id="mensaje1"></div>
+      <div class="columna" id="columna1">
+        <div class="elemento" onclick="seleccionarElemento('columna1',this, 'Psicologica')" data-palabra = "Psicologica">Violencia Psicológica</div>
+        <div class="elemento" onclick="seleccionarElemento('columna1',this, 'Sexual')" data-palabra = "Sexual">Violencia Sexual</div>
+        <div class="elemento" onclick="seleccionarElemento('columna1',this, 'Fisica')" data-palabra = "Fisica">Violencia Física</div>
+        <div class="elemento" onclick="seleccionarElemento('columna1',this, 'Economica')" data-palabra = "Economica">Violencia Económica</div>
+        <div class="elemento" onclick="seleccionarElemento('columna1',this, 'Educativa')" data-palabra="Educativa" >Violencia hacia personas<br>de la comunidad educativa</div>
+        <div class="elemento" onclick="seleccionarElemento('columna1',this, 'Violencia')" data-palabra="Violencia" >VIOLENCIA CONTRA LA MUJER</div>
+      </div>
+      <h3>Relacione la palabra de la Columna Izquierda<br>con el concepto de la Columna Derecha <br></h3>
+      <div class="columna" id="columna2">
+        <div class="elemento" onclick="seleccionarElemento('columna2',this, 'Fisica')" data-palabra = "Fisica">Consiste en agredir el cuerpo<br>de una persona,ya sea<br>a través de golpes,<br>lanzamiento de objetos</div>
+        <div class="elemento" onclick="seleccionarElemento('columna2',this, 'Economica')" data-palabra = "Economica">Cuando se controla o limita<br>sus ingresos económicos<br>y la disposición de<br> los mismos.</div>
+        <div class="elemento" onclick="seleccionarElemento('columna2',this, 'Psicologica')" data-palabra = "Psicologica">En una víctima son humillación,<br>culpa,ira,ansiedad,<br>depresión,aislamiento familiar<br>y social</div>
+        <div class="elemento" onclick="seleccionarElemento('columna2',this, 'Sexual')" data-palabra = "Sexual">Abarca actos que van desde el <br>acoso verbal a la <br>penetración forzada.</div>
+        <div class="elemento" onclick="seleccionarElemento('columna2',this, 'Violencia')" data-palabra = "Violencia">Actos violentos contra las mujeres<br>relacionados con el control<br>que los hombres quieren tener<br>sobre ellas,aprovechándose,en<br>la mayoría de los casos,de las<br>condiciones indefensas,<br>desigualdad y poder.</div>
+        <div class="elemento" onclick="seleccionarElemento('columna2',this, 'Educativa')" data-palabra = "Educativa">Como toda agresión realizada<br>dentro del ambiente de<br>las instituciones<br>educativas.</div>
+      </div>
+      <div id="mensaje" style="display: none;"></div>
+      <div id="capaBloqueo"></div>
+      <dialog id="mensajeDialog">
+        <p id="mensajeText"></p>
+        <button onclick="location.reload()">Reiniciar</button>
+      </dialog>
+      <canvas id="canvas" width="1000" height="480"></canvas>
+    </div>
+  </main>
+  <footer class="footer">
+    <section class="footer__container container" id="Contacto">
+        <nav class="nav nav--footer">
+            <h2 class="footer__title">Campaña Apoyo Femenino.</h2>
+
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="#Inicio" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#Contacto" class="nav__links">Contacto</a>
+                    <h3 style="color: white">Karen Muñoz<br>Celular:3202206299</h3>
+                    <h3 style="color: white">Liliana Gamboa<br>Celular:3004459077</h3>
+                </li>
+                <div class="footer__logo">
+                  <p> <br> <br> </p>
+                  <img src="./IMAGENES/EscudoColegio.gif" alt="Logo violencia de genero">
+                  <img src="./IMAGENES/EscudoUniversidad.jpeg" alt="Logo violencia de genero">
+              </div>
+            </ul>
+        </nav>
+
+        <form class="footer__form" action="https://formspree.io/f/mbjeevan"
+        method="POST">
+            <h2 class="footer__newsletter">Suscribete en Nuestra Pagina</h2>
+            <div class="footer__inputs">
+                <input type="email" placeholder="Email:" class="footer__input" name="email">
+                <input type="submit" value="Registrate" class="footer__submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="footer__copy container">
+        <div class="footer__social">
+            <a href="#" class="footer__icons"><img src="IMAGENES/facebook.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="IMAGENES/twitter.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="IMAGENES/youtube.svg" class="footer__img"></a>
+        </div>
+
+        <h3 class="footer__copyright">Derechos reservados &copy; Karen Muñoz</h3>
+    </section>
+  </footer>
+  <script src="JS/RelacionPalabras.js"></script>
+  <script src="JS/slider.js"></script>
+  <script src="JS/questions.js"></script>
+  <script src="JS/menu.js"></script>
+</body>
+</html>
